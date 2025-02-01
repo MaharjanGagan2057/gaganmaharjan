@@ -1,0 +1,337 @@
+*{
+margin: 0;
+padding:0;
+list-style: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+:root{
+  --primarycolour:paleturquoise;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 8vh;
+    border-bottom: 1px solid var(--darkcolour);
+    height: 9vh;
+    background-color:paleturquoise;
+}
+nav h1{
+  margin: 2rem;
+  
+}
+
+ nav ul{
+        width: 30%;
+        display: flex;
+        font-size: 1.2rem;    
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    nav ul li{
+        color: var(--lightcolour);
+
+    }
+    nav ul li:hover{
+        cursor: pointer;
+        text-decoration:underline;
+      
+    }
+    nav h1{
+      font-size: 2.5rem;
+      color: black;
+      text-align:center;
+      
+
+    }
+
+  .hero{
+    height: 92vh;
+    display: flex;
+    background-color: paleturquoise;
+  }
+
+  .hero .left{
+ 
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  
+  }
+
+  .hero .right{
+   
+    height: 100%;
+    width: 50%;
+    display: flex;
+  justify-content:center;
+    align-items:center;
+
+  }
+  .hero .right img{
+   height: 60%;
+   border-radius: 50% 20% / 10% 40%;
+  }
+
+  .left h1{
+    font-size: 3rem;
+  }
+
+  .socialmedia{
+    width: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .socialmedia img{
+    height:2.5rem;
+    border-radius: 50% ;
+
+  }
+
+  .socialmedianame{
+    width: 10rem; 
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.7rem;
+  
+
+  }
+
+.services{
+  padding: left 1rem; 
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 1rem;
+    color: rgb(10, 10, 10);
+  }
+  .services h1{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .services div{
+    margin:0.2rem;
+    height:22rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    background-color: #98e8ec;
+    border-radius: 25% 10%;
+    
+  
+    
+  }
+  .services div:hover{
+    cursor: pointer;
+    background-color: #a8d4f9;
+    transform: scale(1.1);
+    transition: 2s;
+
+  }
+
+  .services div img{
+    height: 10rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin-top:2.5rem;
+  }
+
+  .services div h3{
+    color: rgb(230, 173, 27);
+  }
+
+  .services div p{
+    padding: 0 3rem ;
+  }
+
+  .outsideofservices{
+    color: black;
+    margin-top:  2rem; 
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+
+  }
+
+
+.projects{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(115, 237, 190)se;
+    padding: 0;
+} 
+.outsideofprojects{
+  color: black;
+  margin-top:  2rem; 
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+
+
+}
+.projects h1{
+  text-align: center;
+}
+
+#contact{
+  margin: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    background-color: #d2f2f0;
+}
+.contactleft{
+  
+    height: 100%;
+    width:25% ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactright{
+    height: 100%;
+    width: 75% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactform{
+  margin: 0;
+    max-width: 50rem;
+    padding: 2rem;
+    border-radius: .4rem;
+    box-shadow: black;
+    width: 100%;
+    background-color:paleturquoise;
+}
+
+label{
+    display: block;
+    font-weight:bold;
+}
+
+.input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing:border-box ;
+    border-radius: .4rem;
+    margin-bottom: .9rem;
+}
+
+.button{
+    cursor: pointer;
+    color: #94defc;
+    padding: 1rem 2rem ;
+    border-radius: 4rem;
+    transition: 5px 1s ease-in-out ;
+    
+}
+
+
+  
+/* From Uiverse.io by Shoh2008 */ 
+.loader {
+    width: 120px;
+    height: 150px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#ddd 50%, #bbb 51%),
+      linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
+      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
+      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
+      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);
+    background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;
+    background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;
+    position: relative;
+    border-radius: 6%;
+    animation: shake 3s ease-in-out infinite;
+    transform-origin: 60px 180px;
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 100%;
+    width: 7px;
+    height: 5px;
+    background: #aaa;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 102px 0 #aaa;
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    background-color: #bbdefb;
+    background-image: linear-gradient( to right, #0004 0%, #0004 49%, #0000 50%, #0000 100% ),
+      linear-gradient(135deg, #64b5f6 50%, #607d8b 51%);
+    background-size: 30px 100%, 90px 80px;
+    border-radius: 50%;
+    background-repeat: repeat, no-repeat;
+    background-position: 0 0;
+    box-sizing: border-box;
+    border: 10px solid #DDD;
+    box-shadow: 0 0 0 4px #999 inset, 0 0 6px 6px #0004 inset;
+    animation: spin 3s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg)
+    }
+  
+    50% {
+      transform: rotate(360deg)
+    }
+  
+    75% {
+      transform: rotate(750deg)
+    }
+  
+    100% {
+      transform: rotate(1800deg)
+    }
+  }
+  
+  @keyframes shake {
+    65%, 80%, 88%, 96% {
+      transform: rotate(0.5deg)
+    }
+  
+    50%, 75%, 84%, 92% {
+      transform: rotate(-0.5deg)
+    }
+  
+    0%, 50%, 100% {
+      transform: rotate(0)
+    }
+  }
