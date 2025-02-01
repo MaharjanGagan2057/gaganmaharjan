@@ -91,13 +91,13 @@ nav h1{
     justify-content: space-evenly;
 
   }
-
+/* images of social media icon */
   .socialmedia img{
     height:2.5rem;
     border-radius: 50% ;
 
   }
-
+/* socialmedia names */
   .socialmedianame{
     width: 10rem; 
     display: flex;
