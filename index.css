@@ -33,7 +33,7 @@ nav h1{
 
     }
     nav ul li{
-        color: var(--lightcolour);
+        color: light rgb(132, 156, 249);
 
     }
     nav ul li:hover{
